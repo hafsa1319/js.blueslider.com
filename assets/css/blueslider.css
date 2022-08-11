@@ -1,0 +1,24 @@
+.js--blueSlider {
+  max-height: 100vh;
+}
+.js--blueSlider .swiper {
+  max-height: inherit;
+}
+.js--blueSlider .swiper-button-prev, .js--blueSlider .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.js--blueSlider .swiper-button-prev::after, .js--blueSlider .swiper-button-next::after {
+  font-size: 25px;
+  color: black;
+}
+.js--blueSlider .swiper-slide img {
+  max-width: 100% !important;
+}
+
+/*# sourceMappingURL=blueslider.css.map */

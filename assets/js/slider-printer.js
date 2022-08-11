@@ -1,5 +1,3 @@
-let global = "https://assest.allreview.io/comments.js";
-let globalCss = "https://assest.allreview.io/style.css";
 let localCss = "./assets/css/blueslider.css";
 let local = "./assets/js/blueslider.js";
 let newRun = document.createElement("script");
