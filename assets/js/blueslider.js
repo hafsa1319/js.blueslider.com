@@ -12,14 +12,13 @@ import digitNonValue from "./Parts/digitNonValue.js";
       .then(res => res.text())
       .then(response => {
         let data = response;
-          console.log(data)
         const decode = (b64)=>{return decodeURIComponent(escape(window.atob(b64)));}
         data = JSON.parse(decode(data))
         let dataId = data.list[0].id;
         let dataList = data.list[0];
         let dataSettings = data.settings;
         let date = Date.now()
-        console.log(date)
+
         
         let dateStart = settingValueReturn(dataSettings,"ViewDateBs");
         dateStart = dateStart.split("-")
@@ -36,7 +35,7 @@ import digitNonValue from "./Parts/digitNonValue.js";
           swiperSliderSetting(dataId,dataSettings);
           sliderMouseOnStop(dataSettings,dataId);
         } else {
-          console.log("slider süresi sonlanmış")
+          //console.log("slider süresi sonlanmış")
         }
         
         
@@ -102,12 +101,12 @@ import digitNonValue from "./Parts/digitNonValue.js";
         return `<picture>
   <source
     media="(min-width: ${Number(mobilBreak)+1}px)"
-    srcset="https://s3.eu-west-1.wasabisys.com/hafsa.live/${sliderItem.fileDesktop}">
+    srcset="${sliderItem.fileDesktop}">
   <source
     media="(max-width: ${mobilBreak}px)"
-    srcset="https://s3.eu-west-1.wasabisys.com/hafsa.live/${sliderItem.fileMobil}">
+    srcset="${sliderItem.fileMobil}">
   <img
-    src="https://s3.eu-west-1.wasabisys.com/hafsa.live/${sliderItem.fileDesktop}"
+    src="${sliderItem.fileDesktop}"
     alt="Flowers"
     style="width:auto;"
     loading="lazy"
