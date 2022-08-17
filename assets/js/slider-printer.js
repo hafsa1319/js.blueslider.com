@@ -1,5 +1,5 @@
-let localCss = "./assets/css/blueslider.css";
-let local = "./assets/js/blueslider.js";
+let localCss = "https://js.blueslider.com/assets/css/blueslider.css";
+let local = "https://js.blueslider.com/assets/js/blueslider.js";
 let newRun = document.createElement("script");
 let newCss = document.createElement("link");
 let swiperCss = document.createElement("link");

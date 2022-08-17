@@ -8,13 +8,12 @@ import digitNonValue from "./Parts/digitNonValue.js";
     com = digitNonValue(com);
     project = digitNonValue(project);
     widget = digitNonValue(widget);
-    fetch(`https://json.blueslider.com//${com}-${project}-${widget}.json`)
+    fetch(`https://json.blueslider.com/${com}-${project}-${widget}.json`)
       .then(res => res.text())
       .then(response => {
         let data = response;
-        const decode = (b64)=>{
-          return decodeURIComponent(escape(window.atob(b64)));
-        }
+          console.log(data)
+        const decode = (b64)=>{return decodeURIComponent(escape(window.atob(b64)));}
         data = JSON.parse(decode(data))
         let dataId = data.list[0].id;
         let dataList = data.list[0];
