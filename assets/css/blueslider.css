@@ -17,8 +17,12 @@
   font-size: 25px;
   color: black;
 }
+.js--blueSlider .swiper-slide {
+  text-align: center;
+}
 .js--blueSlider .swiper-slide img {
   max-width: 100% !important;
+  width: 100% !important;
 }
 
 /*# sourceMappingURL=blueslider.css.map */
